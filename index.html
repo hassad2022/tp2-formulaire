@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <style>
+        *{background-color: orangered;
+        color:black;}
+        h1{background-color: yellow;}
+        legend{background-color: blue;color: black;}
+    </style>
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <h2>Questionnaire et mobilité urbaine</h2>
+    <p>Le service des transports d’une municipalité envisage de remanier l’offre de transports en commun. <br> A cette fin,une enquête est menée auprès des usagers à l’aide du formulaire ci-dessous.</p>
+</body>
+<form action="https://html-reponse.usertest.fr/reponse.php " method="post">
+    <fieldset>
+        <legend>Informations personnelles</legend>
+        <label for="genre">Genre:</label>
+         <label for="genre ">M </label>
+         <input type="radio" id="genre" name="type">
+         <label for="genre">F</label>
+         <input type="radio" id="genre" name="type"><br>
+         <label for="classe d'age">Classe d'age:</label>
+         <select name="age">
+            <option value="Moins de 20ans" name="M20">Moins de 20ans</OPtion>
+            <option value="20ans à 39ans " name="2039">20ans à 39ans</option>
+            <option value="40ans à 59ans" name="4059">40ans à 59ans</option>
+            <option value="60ans ou plus" name="P60">plus de 60ans</option><br>
+        </select> <br>
+        <label for="Groupe socioprofessionnel">Goupe socioprofessionnel:</label>
+     <select name="gsp" id="groupe socioprofessionnel">
+            <option value="agriculteurs exploitants" name="agri">agriculteurs exploitants</option>
+            <option value="Artisans,commerçants et chefs d'entreprise" name="arti">Artisans,commerçantset chefs d'entreprise</option>
+            <option value="cadres et professions intellectuelles supérieures" name="cadr">cadres et professions intellectuelles supérieures</option>
+            <option value="professions intermédiaires name="proi">professions intermédiaires</option>
+            <option value="Employés" name="empl">Employés</option>
+            <option value="ouvriers" name="ouvr">ouvriers</option>
+            <option value="retraités" name="retr">retraités</option>
+            <option value="Autres personnes sans activité professionnelle" name="sansac">Autres personnes sans activité professionnelle</option>
+
+         </SElect> <br>
+<label for="code postal">code postal</label>
+<input type="text" placeholder="49000" name="cpostal" id="code postal"> <br>
+    </fieldset>
+    <fieldset>
+        <legend>Informations sur les trajets domicile-travail</legend>
+        <label for="véhicule principal pour les trajets domicile-travail">véhicule principal pour les trajets domicile-travail:</label>
+        <select name="vehicule" id="vehicule principal">
+            <option value="Aucun" name="piéton">Aucun</option>
+            <option value="bicyclette" name="velo"> bicyclette</option>
+            <option value="Deux roues motorisé" name="deuxroues">Deux roues motorisé</option>
+            <option value="Automobile" name="auto">Automobile</option>
+            <option value="Transports en commun" name="tcommun">Transports en commun</option><br>
+        </select><br>
+        <label>distance domicile-travail :</label>
+        <select id="distance domicile-travail" name="distance domicile-travail">
+            <option value="inférieur à 1km>inférieur à 1km</option>
+            <option value="1km" name="m1">1km</option>
+            <option value="1km à 5km" name="15">1km à 5km</option>
+            <option value="5 à 15km" name="515">5 à 15km</option>
+            <option value="plus de 15km" name="p15">plus de 15km</option>
+        </select>
+            </fieldset><br>
+<fieldset>
+    
+        <legend >axe d'amélioration des transports en commun</legend>
+        <p>cocher les principaux obstacles à la mobilités en transport en communs (plusieurs réponses possibles) </p>
+    <input type="checkbox" id="temps de trajet trop longs" name="temps de trajet trop long">
+    <label>temps de trajet trop longs</label>
+    <input type="checkbox" id="respect des horaires" name="respect des horaires">
+    <label>respect des horaires</label>
+    <input type="checkbox" id="tarifs trop élevés" name="tarifs trop élevés">
+    <label>tarifs trop élevés</label><br>
+    <input type="checkbox" id="respect des horaires" name="respect de horaires">
+    <label>respect des horaires</label>
+    <input type="checkbox" id="trop forte affluence" name="trop forte affluence">
+    <input type="checkbox" id="desserte insuffisante" name="desserte insuffisante">
+    <label>desserte insuffisante</label><br>
+    <input type="checkbox" id="amplitude horaire trop limitée" name="amplitude horaire trop limitée">
+    <label>amplitude horaire trop limitée</label>
+    <input type="checkbox" id="confort insuffisant" name="confort insuffissant">
+    <label>confort insuffissant</label><br>
+    <p>Remarques ou observations sur le réseau de transports en commun</p>
+    <textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="ecrivez ici"></textarea>
+    </fieldset>
+
+ </fieldset><br>
+ <fieldset>
+    <legend>Merci de votre participation!</legend>
+    <button type="submit">soumettre</button>
+    <button type="submit">réinstaliser</button>
+ </fieldset>
+
+
+
+
+
+    </form>
+    </html>
